@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-area {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.selected-songs-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #3d3d3d; /* Dark border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding for spacing */
+  background-image: linear-gradient(to bottom, #1e1e1e, #3d3d3d); /* Music-themed gradient background */
+  max-height: 800px; /* Maximum height */
+}
+
+.selected-songs {
+  overflow-y: auto;
+  height: 800px; /* Fixed height */
+}
+
+.selected-songs h2 {
+  color: #fff; /* Text color for the title */
+  font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+.searchInput {
+  width: calc(100% - 20px);
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 20px; /* Adjust spacing */
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.searchResults {
+  overflow-y: auto;
+  max-height: 800px; /* Maximum height */
+}
+
+.searchItem, .selectedItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.albumCover {
+  margin-right: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+.trackInfo {
+  display: flex;
+  justify-content: space-between; /* Align to the right */
+  align-items: center;
+  width: calc(100% - 140px); /* Adjust width to accommodate buttons */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.playButton,
+.addButton {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.playButton:hover,
+.addButton:hover {
+  opacity: 0.7;
+}
+
+.addButton {
+  margin-right: 5px;
+}
+
+.removeButton {
+  margin-left: 10px; 
+}
+
+.title-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.songTitle {
+  margin-bottom: 4px; /* Add some space between the title and artist */
+}
+
+.artist {
+  text-align: left;
+}
+.songTitle {
+  text-align: left;
+}
+
+
+/* SearchComponent.css */
+
+/* CSS */
+/* Add styles for the upload container */
+.uploadContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust input and button styles */
+.playlistInput {
+  flex: 1;
+  animation: bounce 0.5s ease;
+}
+
+.uploadButton {
+  cursor: pointer;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+
+/* Styles for the modal animation */
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playlistInput {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

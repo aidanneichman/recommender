@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px; /* Space for the title */
+}
+
+.title {
+  font-size: 60px; /* Increased size */
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px; /* More space below the title */
+  font-family: 'Roboto', sans-serif; /* Example of a professional yet friendly font */
+}
+
+body {
+  overflow: hidden;
+}
